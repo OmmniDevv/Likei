@@ -1,0 +1,9 @@
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  position: fixed;
+  background-color: rgb(36, 34, 34);
+  display: flex;
+}

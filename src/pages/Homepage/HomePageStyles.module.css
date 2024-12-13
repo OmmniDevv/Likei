@@ -1,0 +1,9 @@
+.homepage {
+  padding-top: 70px;
+  width: 100dvw;
+  height: fit-content;
+  background-color: #a33939;
+  font-size: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
