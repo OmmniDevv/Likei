@@ -1,4 +1,120 @@
 .hero {
-  background-color: rgb(189, 189, 6);
-  height: calc(100vh - 70px);
+  background: url(../../../assets/herobg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 70px);
+  height: fit-content;
+  display: grid;
+  grid-template-areas:
+    "part1 text"
+    "part1 part2";
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 30% 70%;
+  overflow: hidden;
+}
+.part1 {
+  grid-area: part1;
+  border: 2px solid black;
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.part2 {
+  grid-area: part2;
+  border: 2px solid black;
+  margin: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.text {
+  grid-area: text;
+  border: 2px solid black;
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 20px;
+  }
+}
+.asidetext {
+  height: 90%;
+  width: 5%;
+  border: 2px solid black;
+  margin-right: 5px;
+}
+.maincard {
+  height: 90%;
+  width: 90%;
+  border: 2px solid black;
+}
+.video {
+  display: inline-block;
+  width: 60%;
+  min-width: 18em;
+  height: 50%;
+  min-height: 250px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.box1 {
+  display: inline-block;
+  width: 30%;
+  min-width: 12em;
+  height: 50%;
+  min-height: 200px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.box2 {
+  display: inline-block;
+  width: 45%;
+  min-width: 15em;
+  height: 40%;
+  min-height: 200px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.box3 {
+  display: inline-block;
+  width: 45%;
+  min-width: 15em;
+  height: 40%;
+  min-height: 200px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    grid-template-areas:
+      "text"
+      "part1"
+      "part2";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  .part1,
+  .part2,
+  .text {
+    margin: 5px 5px;
+  }
+
+  .part2 {
+    height: fit-content;
+  }
+  .asidetext,
+  .maincard {
+    height: 90%;
+  }
+  .video,
+  .box1,
+  .box2,
+  .box3 {
+    min-width: 90%;
+  }
 }

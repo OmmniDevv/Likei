@@ -1,4 +1,5 @@
 .section1 {
-  background-color: rgb(6, 189, 52);
+  background: url(../../../assets/section1bg.png);
+  background-size: cover;
   height: calc(100vh - 70px);
 }
