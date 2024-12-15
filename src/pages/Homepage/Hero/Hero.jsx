@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import styles from "./HeroStyles.module.css";
 import vid1 from "../../../assets/video.mov";
 import poster from "../../../assets/poster.png";
@@ -6,8 +7,14 @@ import winter from "../../../assets/winter.png";
 import spring from "../../../assets/spring.png";
 import summer from "../../../assets/summer.png";
 import autumn from "../../../assets/autumn.png";
-
+import img1 from "../../../assets/img1.png";
+import hearts from "../../../assets/hearts.webp";
+import lovebutton from "../../../assets/lovebutton.png";
 const Hero = () => {
+  const [count, setCount] = useState(0);
+  if (count === 101) {
+    setCount(0);
+  }
   return (
     <section className={styles.hero}>
       <div className={styles.part1}>
@@ -21,8 +28,24 @@ const Hero = () => {
           <p>Juli</p>
         </div>
         <div className={styles.maincard}>
-          <h1>maincard1</h1>
-          <h1>maincard1</h1>
+          <div className={styles.maincardp1}>
+            <img
+              src={hearts}
+              alt="Hearts"
+              className={styles.hearts}
+              draggable="false"
+            />
+            <img src={img1} alt="Image" className={styles.img1} />
+          </div>
+          <div className={styles.maincardp2}>
+            <div className={styles.textbox1}>
+              <h1 className={styles.maincardh1}>One Year Togheter</h1>
+            </div>
+            <hr></hr>
+            <div className={styles.textbox2}>
+              <h2 className={styles.maincardh2}>2023-2024</h2>
+            </div>
+          </div>
         </div>
       </div>
       <div className={styles.text}>
@@ -70,7 +93,7 @@ const Hero = () => {
             controls
             rotate="180"
             height="100%"
-            width={"90%"}
+            width="90%"
             autoplay
             loop
             muted
@@ -80,7 +103,28 @@ const Hero = () => {
             <source src={vid1} type="video/mp4"></source>
           </video>
         </div>
-        <div className={styles.box3}>box3</div>
+        <div className={styles.box3}>
+          <div className={styles.box3p1}>
+            <h1 className={styles.box3h1}>Click here</h1>
+            <p className={styles.box3p}> to</p>
+            <h1 className={styles.box3h1}> send love!</h1>
+          </div>
+          <div className={styles.box3p2}>
+            <button
+              className={styles.box3button}
+              onClick={() => setCount(count + 1)}
+            >
+              <img src={lovebutton} alt="Love Button" draggable="false" />
+            </button>
+            <p className={styles.box3p}>
+              {count} {count === 10 && " Wow!"}
+              {count === 20 && " Crazy!"}
+              {count === 50 && " Too much!"}
+              {count === 80 && " Stop!"}
+              {count === 100 && " <3"}
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
