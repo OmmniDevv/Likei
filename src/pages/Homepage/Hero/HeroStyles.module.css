@@ -38,7 +38,8 @@
   h1 {
     font-size: clamp(3.2em, 8vw, 15em);
     font-weight: bolder;
-    opacity: 0.9;
+    font-style: italic;
+    opacity: 0.75;
   }
   .heart {
     color: rgba(255, 0, 0, 0.397);
