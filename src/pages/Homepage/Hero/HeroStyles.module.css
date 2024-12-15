@@ -273,7 +273,7 @@ video {
   justify-content: center;
 }
 .maincardh1 {
-  font-size: clamp(2.7em, 5vw, 10em);
+  font-size: clamp(2.5em, 5vw, 10em);
   width: 5ch;
   opacity: 0.7;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
