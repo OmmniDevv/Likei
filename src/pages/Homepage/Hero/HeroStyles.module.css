@@ -39,7 +39,7 @@
     font-size: clamp(3.2em, 8vw, 15em);
     font-weight: bolder;
     font-style: italic;
-    opacity: 0.75;
+    opacity: 0.9;
   }
   .heart {
     color: rgba(255, 0, 0, 0.568);
