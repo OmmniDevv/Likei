@@ -7,4 +7,5 @@
   position: fixed;
   background-color: #221b1e;
   display: flex;
+  z-index: 1;
 }

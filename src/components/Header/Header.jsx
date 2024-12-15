@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <button>!2</button>
-      <h1>Header</h1>
     </header>
   );
 };

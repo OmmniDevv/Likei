@@ -14,7 +14,6 @@
 }
 .part1 {
   grid-area: part1;
-  border: 2px solid black;
   margin: 20px 20px;
   display: flex;
   align-items: center;
@@ -22,7 +21,6 @@
 }
 .part2 {
   grid-area: part2;
-  border: 2px solid black;
   margin: 20px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -31,64 +29,194 @@
 }
 .text {
   grid-area: text;
-  border: 2px solid black;
   margin: 20px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   h1 {
-    font-size: 20px;
+    font-size: clamp(3.5em, 8vw, 15em);
+  }
+  .heart {
+    color: rgba(255, 0, 0, 0.397);
   }
 }
 .asidetext {
   height: 90%;
-  width: 5%;
-  border: 2px solid black;
-  margin-right: 5px;
+  width: 2%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  p {
+    font-size: clamp(0.3em, 4vw, 0.9em);
+    opacity: 0.5;
+  }
 }
 .maincard {
   height: 90%;
   width: 90%;
-  border: 2px solid black;
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.58);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
-.video {
-  display: inline-block;
+.box1 {
   width: 60%;
   min-width: 18em;
   height: 50%;
-  min-height: 250px;
-  border: 2px solid black;
+  min-height: 200px;
   margin-top: 10px;
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.58);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: grid;
+  grid-template-areas:
+    "winter spring"
+    "summer autumn";
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
 }
-.box1 {
-  display: inline-block;
+.box2 {
   width: 30%;
   min-width: 12em;
   height: 50%;
   min-height: 200px;
   border: 2px solid black;
   margin-top: 10px;
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.58);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: grid;
+  grid-template-areas:
+    "box2p1 box2p1"
+    "box2p2 box2p2";
+  grid-template-columns: auto auto;
 }
-.box2 {
-  display: inline-block;
+.video {
   width: 45%;
   min-width: 15em;
   height: 40%;
   min-height: 200px;
-  border: 2px solid black;
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+video {
+  border-radius: 20px;
+  border: 5px solid rgba(255, 255, 255, 0.125);
 }
 .box3 {
-  display: inline-block;
   width: 45%;
   min-width: 15em;
   height: 40%;
   min-height: 200px;
   border: 2px solid black;
   margin-top: 10px;
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.58);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.box2p1 {
+  grid-area: box2p1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.125);
+}
+.box2p2 {
+  grid-area: box2p2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.number {
+  font-size: clamp(3em, 4vw, 8em);
+  opacity: 0.7;
+}
+.word {
+  font-size: clamp(1em, 2vw, 5em);
+  opacity: 0.7;
+  font-weight: bolder;
+}
+.box2p1section1 {
+  height: 100%;
+  width: 50%;
+  border-right: 3px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box2p1section2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.winter {
+  grid-area: winter;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin-left: 15px;
+}
+.spring {
+  grid-area: spring;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+.summer {
+  grid-area: summer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin-left: 15px;
+}
+.autumn {
+  grid-area: autumn;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+.season {
+  width: auto;
+  height: clamp(3.5em, 8vw, 7em);
+  border: 2px solid rgba(255, 255, 255, 0.125);
+  border-radius: 20px;
+  background-color: rgba(57, 38, 65, 0.267);
+  padding: 10px 10px;
+  transition: transform 0.2s ease-in-out;
+}
+.season:hover {
+  transform: scale(0.9);
+}
+.seasonword {
+  font-size: clamp(0.8em, 2vw, 5em);
+  font-style: italic;
+  font-weight: bolder;
+  opacity: 0.6;
+}
 @media (max-width: 1200px) {
   .hero {
     grid-template-areas:
@@ -106,6 +234,7 @@
 
   .part2 {
     height: fit-content;
+    gap: 10px;
   }
   .asidetext,
   .maincard {
@@ -115,6 +244,16 @@
   .box1,
   .box2,
   .box3 {
-    min-width: 90%;
+    min-width: 95%;
+  }
+  video {
+    width: 100%;
+  }
+  .maincard {
+    height: 95%;
+    width: 95%;
+  }
+  .asidetext {
+    display: none;
   }
 }
