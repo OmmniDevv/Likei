@@ -1,5 +1,7 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styles from "./HeroStyles.module.css";
 import vid1 from "../../../assets/video.mov";
 import poster from "../../../assets/poster.png";
@@ -15,6 +17,11 @@ const Hero = () => {
   if (count === 101) {
     setCount(0);
   }
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <section className={styles.hero}>
       <div className={styles.part1}>
@@ -27,7 +34,7 @@ const Hero = () => {
           <p>for</p>
           <p>Juli</p>
         </div>
-        <div className={styles.maincard}>
+        <div data-aos="fade-up" className={styles.maincard}>
           <div className={styles.maincardp1}>
             <img
               src={hearts}
@@ -48,13 +55,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className={styles.text}>
+      <div data-aos="fade-up" className={styles.text}>
         <h1>
           Juli <span className={styles.heart}>&hearts;</span> Alex
         </h1>
       </div>
       <div className={styles.part2}>
-        <div className={styles.box1}>
+        <div data-aos="fade-up" className={styles.box1}>
           <div className={styles.winter}>
             <img src={winter} alt="Winter" className={styles.season} />
             <p className={styles.seasonword}>Winter</p>
@@ -72,7 +79,7 @@ const Hero = () => {
             <p className={styles.seasonword}>Autumn</p>
           </div>
         </div>
-        <div className={styles.box2}>
+        <div data-aos="fade-up" className={styles.box2}>
           <div className={styles.box2p1}>
             <div className={styles.box2p1section1}>
               <h2 className={styles.number}>1</h2>
@@ -88,7 +95,7 @@ const Hero = () => {
             <p className={styles.word}>seasons</p>
           </div>
         </div>
-        <div className={styles.video}>
+        <div data-aos="fade-up" className={styles.video}>
           <video
             controls
             rotate="180"
@@ -103,7 +110,7 @@ const Hero = () => {
             <source src={vid1} type="video/mp4"></source>
           </video>
         </div>
-        <div className={styles.box3}>
+        <div data-aos="fade-up" className={styles.box3}>
           <div className={styles.box3p1}>
             <h1 className={styles.box3h1}>Click here</h1>
             <p className={styles.box3p}> to</p>

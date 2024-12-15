@@ -224,6 +224,7 @@ video {
   background-color: rgba(57, 38, 65, 0.267);
   padding: 10px 10px;
   transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 .season:hover {
   transform: scale(0.9);
