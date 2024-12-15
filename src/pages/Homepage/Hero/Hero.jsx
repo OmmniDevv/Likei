@@ -50,7 +50,7 @@ const Hero = () => {
       </div>
       <div className={styles.text}>
         <h1>
-          Juli <span className={styles.heart}>&#10084;</span> Alex
+          Juli <span className={styles.heart}>&hearts;</span> Alex
         </h1>
       </div>
       <div className={styles.part2}>
