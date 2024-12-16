@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./HeroStyles.module.css";
@@ -55,7 +56,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" className={styles.text}>
+      <div data-aos="fade-down" data-aos-delay="300" className={styles.text}>
         <h1>
           Juli <span className={styles.heart}>&hearts;</span> Alex
         </h1>
@@ -63,19 +64,27 @@ const Hero = () => {
       <div className={styles.part2}>
         <div data-aos="fade-up" className={styles.box1}>
           <div className={styles.winter}>
-            <img src={winter} alt="Winter" className={styles.season} />
+            <Link to="/winter">
+              <img src={winter} alt="Winter" className={styles.season} />
+            </Link>
             <p className={styles.seasonword}>Winter</p>
           </div>
           <div className={styles.spring}>
-            <img src={spring} alt="Spring" className={styles.season} />
+            <Link to="/spring">
+              <img src={spring} alt="Spring" className={styles.season} />
+            </Link>
             <p className={styles.seasonword}>Spring</p>
           </div>
           <div className={styles.summer}>
-            <img src={summer} alt="Summer" className={styles.season} />
+            <Link to="/summer">
+              <img src={summer} alt="Summer" className={styles.season} />
+            </Link>
             <p className={styles.seasonword}>Summer</p>
           </div>
           <div className={styles.autumn}>
-            <img src={autumn} alt="Autumn" className={styles.season} />
+            <Link to="/autumn">
+              <img src={autumn} alt="Autumn" className={styles.season} />
+            </Link>
             <p className={styles.seasonword}>Autumn</p>
           </div>
         </div>

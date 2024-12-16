@@ -1,13 +1,92 @@
 .sidebar {
-  left: -300px;
-  top: 67px;
+  left: -305px;
+  top: 70px;
   width: 300px;
   height: 100vh;
   position: fixed;
-  background-color: #b9b9b9;
+  background: #aa4b6b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    90deg,
+    #3b8d99,
+    #6b6b83,
+    #aa4b6b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    90deg,
+    #3b8d99,
+    #6b6b83,
+    #aa4b6b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   z-index: 1;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border-right: 5px solid rgba(37, 0, 36, 0.678);
 }
 .sidebar.open {
   left: 0;
+}
+.linkcontainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.seasonlink {
+  background-color: rgba(122, 90, 122, 0.26);
+  width: 90%;
+  height: 90px;
+  border-radius: 15px;
+  border: 3px solid rgba(56, 31, 59, 0.678);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.seasonlink:hover {
+  background-color: rgba(95, 95, 95, 0);
+  transform: scale(1.05);
+}
+.seasonlink:active {
+  background-color: rgba(54, 53, 53, 0);
+  transform: scale(0.9);
+}
+.seasonlink2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seasonimg {
+  margin-left: 15px;
+  margin-right: 40px;
+  height: 60px;
+  opacity: 0.8;
+  animation: rotate 15s linear infinite;
+}
+.seasontext {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.firstletter {
+  font-size: 32px;
+  color: rgb(37, 0, 36);
+}
+.julexlogo {
+  height: 100px;
+  opacity: 0.8;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

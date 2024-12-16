@@ -1,0 +1,9 @@
+.springcontainer {
+  padding-top: 70px;
+  width: 100%;
+  height: calc(100% - 70px);
+  background-color: rgb(75, 126, 168);
+  font-size: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
