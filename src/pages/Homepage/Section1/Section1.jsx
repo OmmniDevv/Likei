@@ -58,7 +58,7 @@ const Section1 = () => {
           />
         ))}
       </div>
-      <div className={styles.buttonContainer}>
+      <div className={styles.buttonContainer} data-aos="fade-up">
         {!showAll ? (
           <button
             className={styles.showButton}
