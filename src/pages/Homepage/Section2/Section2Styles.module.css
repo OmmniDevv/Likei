@@ -2,6 +2,7 @@
   background: url(../../../assets/section2bg.png);
   background-size: cover;
   min-height: calc(100vh - 70px);
+  width: 100vw;
   height: fit-content;
   display: grid;
   grid-template-areas:
@@ -9,6 +10,7 @@
     "left bottom right";
   grid-template-columns: 30% 40% 30%;
   grid-template-rows: 40% 60%;
+  overflow: hidden;
 }
 .left {
   grid-area: left;
@@ -32,7 +34,7 @@
   justify-content: start;
   gap: 100px;
   p {
-    margin-top: 200px;
+    margin-top: 180px;
     font-size: clamp(2.8em, 6vw, 18em);
     font-weight: 500;
     font-family: "Times New Roman", Times, serif;
@@ -54,6 +56,7 @@
   justify-content: center;
 }
 .quote1 {
+  margin-top: 150px;
   position: relative;
   border-radius: 12px;
   border: 5px solid rgba(255, 255, 255, 0.125);
@@ -122,6 +125,7 @@
   width: 15ch;
 }
 .quote3 {
+  margin-top: 150px;
   position: relative;
   border-radius: 12px;
   border: 5px solid rgba(255, 255, 255, 0.125);
@@ -190,6 +194,7 @@
   }
   .quote1,
   .quote3 {
+    margin-top: 0px;
     min-height: 300px;
     width: 75%;
   }
