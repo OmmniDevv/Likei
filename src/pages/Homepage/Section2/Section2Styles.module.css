@@ -3,33 +3,158 @@
   background-size: cover;
   min-height: calc(100vh - 70px);
   height: fit-content;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-areas:
+    "left top right"
+    "left bottom right";
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 40% 60%;
 }
-.section2p1 {
-  margin-top: 50px;
-  height: calc(60vh);
-  width: 30%;
+.left {
+  grid-area: left;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(25px) saturate(200%);
-  -webkit-backdrop-filter: blur(25px) saturate(200%);
-  background-color: rgba(17, 25, 40, 0.58);
-  border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  margin-left: 100px;
-  border-radius: 20px;
 }
-.section2title {
+.top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.bottom {
+  grid-area: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 100px;
+  p {
+    margin-top: 200px;
+    font-size: clamp(2.8em, 6vw, 18em);
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+  h2 {
+    font-size: clamp(1em, 3vw, 3em);
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    opacity: 0.3;
+  }
+}
+.right {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quote1 {
+  position: relative;
+  border-radius: 12px;
+  border: 5px solid rgba(255, 255, 255, 0.125);
+  width: 90%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.quote1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../assets/flowers1.png) no-repeat center center;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.quote1 p {
+  position: relative;
+  z-index: 2;
   text-align: center;
+  font-size: clamp(2.2em, 5vw, 10em);
+  font-weight: 100;
   font-family: "Times New Roman", Times, serif;
-  font-size: clamp(3em, 5vw, 8em);
   font-style: italic;
-  font-weight: 500;
-  opacity: 0.7;
-  width: 12ch;
+  width: 10ch;
+}
+.quote2 {
+  position: relative;
+  border-radius: 12px;
+  border: 5px solid rgba(255, 255, 255, 0.125);
+  width: 95%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.quote2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../assets/flowers3.png) no-repeat center center;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 1;
+}
+.quote2 p {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: clamp(2em, 4vw, 10em);
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  width: 15ch;
+}
+.quote3 {
+  position: relative;
+  border-radius: 12px;
+  border: 5px solid rgba(255, 255, 255, 0.125);
+  width: 90%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.quote3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../assets/flowers2.png) no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.quote3 p {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: clamp(2.2em, 5vw, 10em);
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  width: 10ch;
 }
 .homepagefooter {
   bottom: 0;
@@ -48,22 +173,40 @@
 }
 @media screen and (max-width: 1200px) {
   .section2 {
-    flex-direction: column;
-    align-items: center;
+    grid-template-areas:
+      "left"
+      "right"
+      "top"
+      "bottom";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    gap: 25px;
   }
-  .section2p1 {
-    margin-left: 0;
-    width: 90%;
-    max-width: 30em;
-    justify-content: start;
-    max-height: 50%;
-    height: fit-content;
+  .left,
+  .right,
+  .top,
+  .bottom {
+    width: 100%;
   }
-  .section2title {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  .quote1,
+  .quote3 {
+    min-height: 300px;
+    width: 75%;
   }
-  hr {
-    rotate: 90deg;
+  .quote2 {
+    min-height: 150px;
+    width: 75%;
+  }
+  .bottom {
+    p {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    h2 {
+      display: none;
+    }
+  }
+  .left {
+    margin-top: 70px;
   }
 }
