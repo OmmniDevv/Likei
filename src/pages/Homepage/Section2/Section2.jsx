@@ -26,7 +26,7 @@ const Section2 = () => {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="200" className={styles.bottom}>
-          <p>Te iubesc</p>
+          <p>I love you</p>
           <h2 className={styles.date}>21.12.23</h2>
         </div>
         <div className={styles.right}>

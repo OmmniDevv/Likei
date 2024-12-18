@@ -39,7 +39,7 @@
 .seasonlink {
   background-color: rgba(122, 90, 122, 0.26);
   width: 90%;
-  height: 90px;
+  height: 75px;
   border-radius: 15px;
   border: 3px solid rgba(56, 31, 59, 0.678);
   display: flex;
@@ -64,7 +64,7 @@
 .seasonimg {
   margin-left: 15px;
   margin-right: 40px;
-  height: 60px;
+  height: 53px;
   opacity: 0.8;
   animation: rotate 15s linear infinite;
 }
