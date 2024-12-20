@@ -68,6 +68,7 @@
   .wintercontainer {
     flex-direction: column;
     gap: 0px;
+    overflow: hidden;
   }
   .month {
     width: 80%;

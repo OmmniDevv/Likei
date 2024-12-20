@@ -18,6 +18,7 @@ function App() {
           <Route path="/spring" element={<Spring />} />
           <Route path="/summer" element={<Summer />} />
           <Route path="/autumn" element={<Autumn />} />
+          <Route path="*" element={<Homepage />} />
         </Route>
       </Routes>
     </Router>
