@@ -7,6 +7,7 @@ import Winter from "./pages/Winter/Winter";
 import Spring from "./pages/Spring/Spring";
 import Summer from "./pages/Summer/Summer";
 import Autumn from "./pages/Autumn/Autumn";
+import ErrorPage from "./pages/Error/ErrorPage";
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
           <Route path="/spring" element={<Spring />} />
           <Route path="/summer" element={<Summer />} />
           <Route path="/autumn" element={<Autumn />} />
-          <Route path="*" element={<Homepage />} />
         </Route>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
   );

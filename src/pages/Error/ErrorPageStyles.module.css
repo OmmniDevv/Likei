@@ -1,0 +1,55 @@
+.errorcontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background: url(../../assets/herobg.png);
+  background-size: cover;
+}
+.errortext {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: clamp(4em, 5vw, 15em);
+  opacity: 0.8;
+  margin-top: 100px;
+}
+.errorbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.125);
+  background-color: rgba(0, 0, 0, 0.137);
+  transition: all 0.3s ease-in-out;
+  p {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.397);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+  }
+}
+.errorbutton:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.199);
+}
+.errorbutton:active {
+  transform: scale(0.95);
+  background-color: rgba(0, 0, 0, 0.199);
+}
+@media only screen and (max-width: 600px) {
+  .errortext {
+    margin-top: 50px;
+  }
+}
