@@ -7,4 +7,6 @@
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0;
+  padding-bottom: 0px;
+  box-sizing: border-box;
 }
