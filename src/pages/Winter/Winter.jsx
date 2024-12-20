@@ -27,7 +27,6 @@ const Winter = () => {
       <div className={styles.wintercontainer}>
         <div data-aos="fade-up" className={styles.month}>
           <h1 className={styles.monthtext}>December</h1>
-
           <img className={styles.monthimg} src={december1} alt="Image" />
           <img className={styles.monthimg} src={december2} alt="Image" />
           <img className={styles.monthimg} src={december3} alt="Image" />
