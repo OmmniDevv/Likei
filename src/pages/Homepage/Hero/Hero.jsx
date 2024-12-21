@@ -47,7 +47,7 @@ const Hero = () => {
           </div>
           <div className={styles.maincardp2}>
             <div className={styles.textbox1}>
-              <h1 className={styles.maincardh1}>One Year Togheter</h1>
+              <h1 className={styles.maincardh1}>One Year Together</h1>
             </div>
             <hr></hr>
             <div className={styles.textbox2}>
