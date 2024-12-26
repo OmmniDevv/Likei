@@ -11,6 +11,7 @@ Julex is a photo gallery website I made using React and Vite as a gift for my gi
 
 Julex is a project that means a lot to me and shows both my love and my progress as a developer. ❤️
 
+![julex_ss](https://github.com/user-attachments/assets/adda88f9-5700-4690-8227-d0241a47264d)
 
 
 
