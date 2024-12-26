@@ -4,10 +4,10 @@ Julex is a photo gallery website I made using React and Vite as a gift for my gi
 
 **What I Learned While Making Julex:**
 
-  - Got better at using JavaScript to create interactive features.
-  - Improved my CSS skills for styling and making the site look nice.
-  - Learned how to build and organize components in React.
-  - Used Vite to make the project run faster and smoother.
+    - Got better at using JavaScript to create interactive features.
+    - Improved my CSS skills for styling and making the site look nice.
+    - Learned how to build and organize components in React.
+    - Used Vite to make the project run faster and smoother.
 
 Julex is a project that means a lot to me and shows both my love and my progress as a developer. ❤️
 
