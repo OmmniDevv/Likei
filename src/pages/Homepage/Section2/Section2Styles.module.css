@@ -32,9 +32,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  gap: 100px;
+  gap: 70px;
   p {
-    margin-top: 180px;
+    margin-top: 120px;
     font-size: clamp(2.8em, 6vw, 18em);
     font-weight: 500;
     font-family: "Times New Roman", Times, serif;
@@ -59,7 +59,7 @@
   justify-content: center;
 }
 .quote1 {
-  margin-top: 150px;
+  margin-top: 50px;
   position: relative;
   border-radius: 12px;
   border: 5px solid rgba(255, 255, 255, 0.125);
@@ -130,7 +130,7 @@
   opacity: 0.7;
 }
 .quote3 {
-  margin-top: 150px;
+  margin-top: 50px;
   position: relative;
   border-radius: 12px;
   border: 5px solid rgba(255, 255, 255, 0.125);

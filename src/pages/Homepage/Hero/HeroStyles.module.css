@@ -23,11 +23,11 @@
 }
 .part2 {
   grid-area: part2;
+  height: 90%;
   margin: 10px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 20px;
 }
 .text {
   grid-area: text;
@@ -55,7 +55,7 @@
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   p {
-    font-size: clamp(0.3em, 4vw, 0.9em);
+    font-size: clamp(0.3em, 2vw, 0.9em);
     opacity: 0.5;
   }
 }
@@ -109,24 +109,29 @@
   grid-template-columns: auto auto;
 }
 .video {
-  width: 45%;
+  width: 40%;
   min-width: 15em;
   height: 40%;
-  min-height: 200px;
+  min-height: 180px;
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-video {
   border-radius: 20px;
   border: 5px solid rgba(255, 255, 255, 0.125);
+  overflow: hidden;
+  background-color: rgba(225, 225, 227, 0.2);
+}
+video {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .box3 {
   width: 45%;
   min-width: 15em;
   height: 40%;
-  min-height: 200px;
+  min-height: 180px;
   border: 2px solid black;
   margin-top: 10px;
   backdrop-filter: blur(25px) saturate(200%);
@@ -137,6 +142,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .box2p1 {
@@ -334,7 +340,7 @@ hr {
   width: 50%;
   transition: transform 0.1s ease-in-out;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   img {
     height: 100%;
     width: 100%;
@@ -347,7 +353,7 @@ hr {
 .box3button:active {
   transform: scale(0.9);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .hero {
     grid-template-areas:
       "text"

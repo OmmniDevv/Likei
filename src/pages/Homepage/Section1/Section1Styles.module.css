@@ -29,10 +29,9 @@
 .memorycard {
   --webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.45);
-  width: 20%;
-  height: 25em;
-  max-height: 470px;
-  max-width: 20em;
+  width: 14.85vw;
+  min-width: 300px;
+  aspect-ratio: 1/1.25;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,8 +41,8 @@
   box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .memoryimg {
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height: clamp(70%, 71%, 75%);
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.384);
   box-shadow: 0 0 5px rgb(0, 0, 0);
@@ -95,7 +94,7 @@
     width: 85%;
   }
   .memorytext {
-    margin-top: 0;
+    margin-top: 10px;
   }
   .showButton {
     margin-top: 30px;
