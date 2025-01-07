@@ -23,7 +23,7 @@
 }
 .part2 {
   grid-area: part2;
-  margin: 20px 20px;
+  margin: 10px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -242,11 +242,10 @@ video {
 .img1 {
   height: auto;
   width: 50%;
-  margin-top: 20px;
   background-color: rgba(250, 235, 215, 0);
   box-shadow: 0px 0px 20px 0px rgb(158, 55, 150);
-  margin-right: 80px;
-  margin-top: 80px;
+  margin-right: 12%;
+  margin-top: 20px;
 }
 .hearts {
   width: 370px;
@@ -254,15 +253,14 @@ video {
   opacity: 0.2;
 }
 .maincardp1 {
-  height: auto;
+  height: 50%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
 }
 .maincardp2 {
-  height: auto;
+  height: 50%;
   display: flex;
-  flex-direction: row;
 }
 .textbox1 {
   height: 100%;
@@ -279,22 +277,23 @@ video {
   justify-content: center;
 }
 .maincardh1 {
-  font-size: clamp(2.2em, 5vw, 10em);
+  font-size: clamp(2.3em, 4.9vw, 10em);
   width: 5ch;
   opacity: 0.7;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 80px;
+  margin-left: 0.7em;
+  margin-bottom: 0.5em;
 }
 .maincardh2 {
-  font-size: clamp(0.7em, 3vw, 1.3em);
+  font-size: clamp(0.7em, 1.2vw, 2em);
   writing-mode: vertical-lr;
   text-orientation: upright;
   opacity: 0.5;
 }
 hr {
-  margin-top: 50px;
+  margin-top: 4vh;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  height: 90%;
+  height: 80%;
 }
 .box3p1 {
   height: 100%;
@@ -305,8 +304,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.2vh;
   background-color: rgba(114, 13, 63, 0.315);
-  line-height: 2.7em;
 }
 .box3p2 {
   height: 100%;
@@ -317,13 +316,13 @@ hr {
   align-items: center;
 }
 .box3h1 {
-  font-size: clamp(1.4em, 3vw, 2em);
+  font-size: clamp(1.5em, 2.4vw, 2.8em);
   text-align: center;
   width: 10ch;
   opacity: 0.7;
 }
 .box3p {
-  font-size: clamp(1em, 3vw, 1.4em);
+  font-size: clamp(1.5em, 2.4vw, 2.2em);
   text-align: center;
   width: 10ch;
   opacity: 0.7;
@@ -390,7 +389,7 @@ hr {
   .img1 {
     width: 65%;
     margin-right: 0;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .hearts {
     display: none;
@@ -400,12 +399,11 @@ hr {
   }
   .maincardh1 {
     margin-left: 40px;
-    margin-bottom: 30px;
     margin-top: 20px;
   }
   hr {
-    margin-top: 35px;
-    height: 68%;
+    margin-top: 2.7em;
+    height: 60%;
   }
   .winter,
   .summer {
