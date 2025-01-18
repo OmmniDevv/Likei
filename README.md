@@ -1,6 +1,6 @@
 <h1 align="center"><strong><em>Julex - A Special Project</em></strong></h1>
 
-Julex is a photo gallery website I made using React and Vite as a gift for my girlfriend to celebrate our 1-year anniversary. It’s filled with love and memories, designed to showcase our favorite moments in a simple and beautiful way.
+**Julex** is a photo gallery website I made using React and Vite as a gift for my girlfriend to celebrate our 1-year anniversary. It’s filled with love and memories, designed to showcase our favorite moments in a simple and beautiful way.
 
 **What I learned while making Julex:**
 
