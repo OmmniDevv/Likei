@@ -4,10 +4,10 @@
 
 **What I learned while making Julex:**
 
-    • Got better at using JavaScript to create interactive features.
-    • Improved my CSS skills for styling and making the site look nice.
-    • Learned how to build and organize components in React.
-    • Used Vite to make the project run faster and smoother.
+    • JavaScript: Enhanced my ability to create dynamic, interactive features.
+    • CSS & Layout Design: Improved my ability to style complex layouts, focusing on consistency, responsiveness, and user-friendly aesthetics.
+    • Project Organization: Learned to structure and manage projects effectively using Vite for better productivity.
+    • Animations and Transitions: Learned how to use CSS animations and React libraries to add subtle transitions for a polished user experience.
 
 Julex is a project that means a lot to me and shows both my love and my progress as a developer. ❤️
 
