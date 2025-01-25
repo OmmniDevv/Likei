@@ -11,7 +11,8 @@
 
 Julex is a project that means a lot to me and shows both my love and my progress as a developer. ❤️
 
-![julex_presentaion](https://github.com/user-attachments/assets/ace20b59-48b7-4b86-9339-d6815dbb5b09)
+![presentation_julex](https://github.com/user-attachments/assets/2ba9cdc9-1c53-45ea-87b9-09a7cb0465f6)
+
 
 
 
