@@ -1,27 +1,32 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import "./App.css";
 import MainLayout from "./layout/MainLayout";
-import Homepage from "./pages/Homepage/Homepage";
-import Winter from "./pages/Winter/Winter";
-import Spring from "./pages/Spring/Spring";
-import Summer from "./pages/Summer/Summer";
-import Autumn from "./pages/Autumn/Autumn";
-import ErrorPage from "./pages/Error/ErrorPage";
+import Loader from "./pages/Loader/Loader";
+
+const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
+const Winter = lazy(() => import("./pages/Winter/Winter"));
+const Spring = lazy(() => import("./pages/Spring/Spring"));
+const Summer = lazy(() => import("./pages/Summer/Summer"));
+const Autumn = lazy(() => import("./pages/Autumn/Autumn"));
+const ErrorPage = lazy(() => import("./pages/Error/ErrorPage"));
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/winter" element={<Winter />} />
-          <Route path="/spring" element={<Spring />} />
-          <Route path="/summer" element={<Summer />} />
-          <Route path="/autumn" element={<Autumn />} />
-        </Route>
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/winter" element={<Winter />} />
+            <Route path="/spring" element={<Spring />} />
+            <Route path="/summer" element={<Summer />} />
+            <Route path="/autumn" element={<Autumn />} />
+          </Route>
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }
