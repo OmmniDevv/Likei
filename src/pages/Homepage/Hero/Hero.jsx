@@ -31,9 +31,9 @@ const Hero = () => {
           <p>with</p>
           <p>love</p>
           <p>by</p>
-          <p>Alex</p>
+          <p>Alik</p>
           <p>for</p>
-          <p>Juli</p>
+          <p>Keii</p>
         </div>
         <div data-aos="fade-up" className={styles.maincard}>
           <div className={styles.maincardp1}>
@@ -47,11 +47,11 @@ const Hero = () => {
           </div>
           <div className={styles.maincardp2}>
             <div className={styles.textbox1}>
-              <h1 className={styles.maincardh1}>One Year Together</h1>
+              <h1 className={styles.maincardh1}>One Month Together</h1>
             </div>
             <hr></hr>
             <div className={styles.textbox2}>
-              <h2 className={styles.maincardh2}>2023-2024</h2>
+              <h2 className={styles.maincardh2}>2025-2026</h2>
             </div>
           </div>
         </div>
