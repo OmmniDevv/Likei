@@ -27,7 +27,7 @@ const Section2 = () => {
         </div>
         <div data-aos="fade-up" data-aos-delay="500" className={styles.bottom}>
           <p>I love you</p>
-          <h2 className={styles.date}>21.12.23</h2>
+          <h2 className={styles.date}>05.03.25</h2>
         </div>
         <div className={styles.right}>
           <div data-aos="fade-up" className={styles.quote3}>
@@ -38,7 +38,7 @@ const Section2 = () => {
         </div>
       </section>
       <footer className={styles.homepagefooter}>
-        <p>All rights reserved &copy; Julex 2024</p>
+        <p>All rights reserved &copy; Likei 2024</p>
       </footer>
     </div>
   );
