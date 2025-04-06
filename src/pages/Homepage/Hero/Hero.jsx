@@ -6,10 +6,8 @@ import "aos/dist/aos.css";
 import styles from "./HeroStyles.module.css";
 import vid1 from "../../../assets/video.mov";
 import poster from "../../../assets/poster.png";
-import winter from "../../../assets/winter.png";
-import spring from "../../../assets/spring.png";
+import rainy from "../../../assets/rainy.png";
 import summer from "../../../assets/summer.png";
-import autumn from "../../../assets/autumn.png";
 import img1 from "../../../assets/img1.png";
 import hearts from "../../../assets/hearts.webp";
 import lovebutton from "../../../assets/lovebutton.png";
@@ -51,7 +49,7 @@ const Hero = () => {
             </div>
             <hr></hr>
             <div className={styles.textbox2}>
-              <h2 className={styles.maincardh2}>2025-2026</h2>
+              <h2 className={styles.maincardh2}>2025-selamanya</h2>
             </div>
           </div>
         </div>
@@ -63,17 +61,11 @@ const Hero = () => {
       </div>
       <div className={styles.part2}>
         <div data-aos="fade-up" className={styles.box1}>
-          <div className={styles.winter}>
-            <Link to="/winter">
-              <img src={winter} alt="Winter" className={styles.season} />
-            </Link>
-            <p className={styles.seasonword}>Winter</p>
-          </div>
           <div className={styles.spring}>
-            <Link to="/spring">
-              <img src={spring} alt="Spring" className={styles.season} />
+            <Link to="/rainy">
+              <img src={rainy} alt="Rainy" className={styles.season} />
             </Link>
-            <p className={styles.seasonword}>Spring</p>
+            <p className={styles.seasonword}>Rainy</p>
           </div>
           <div className={styles.summer}>
             <Link to="/summer">
@@ -81,26 +73,20 @@ const Hero = () => {
             </Link>
             <p className={styles.seasonword}>Summer</p>
           </div>
-          <div className={styles.autumn}>
-            <Link to="/autumn">
-              <img src={autumn} alt="Autumn" className={styles.season} />
-            </Link>
-            <p className={styles.seasonword}>Autumn</p>
-          </div>
         </div>
         <div data-aos="fade-up" className={styles.box2}>
           <div className={styles.box2p1}>
             <div className={styles.box2p1section1}>
-              <h2 className={styles.number}>1</h2>
+              <h2 className={styles.number}>0</h2>
               <p className={styles.word}>year</p>
             </div>
             <div className={styles.box2p1section2}>
-              <h2 className={styles.number}>365</h2>
+              <h2 className={styles.number}>36</h2>
               <p className={styles.word}>days</p>
             </div>
           </div>
           <div className={styles.box2p2}>
-            <h2 className={styles.number}>4</h2>
+            <h2 className={styles.number}>2</h2>
             <p className={styles.word}>seasons</p>
           </div>
         </div>
