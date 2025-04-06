@@ -7,7 +7,7 @@ import styles from "./HeroStyles.module.css";
 import vid1 from "../../../assets/video.mov";
 import poster from "../../../assets/poster.png";
 import rainy from "../../../assets/rainy.png";
-import summer from "../../../assets/summer.png";
+import summer from "../../../assets/summmer.png";
 import img1 from "../../../assets/img1.png";
 import hearts from "../../../assets/hearts.webp";
 import lovebutton from "../../../assets/lovebutton.png";
